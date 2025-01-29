@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Nothing+You+Could+Do&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Prevent text selection */
+body {
+  user-select: none; /* Disables text selection */
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE/Edge */
+  -moz-user-select: none; /* Firefox */
+}
+
+/* Prevent text hover styles */
+h1, h2, h3, p, span{
+  pointer-events: none; /* Disables hover effects or click events */
+}
+
+body {
+  font-family: "Instrument Sans", serif;
+  background-color: #fce6eb;
+  color: #2c2c2c;
+  line-height: 1.6;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(to bottom, #ff9db4, #fce6eb);
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #49262e;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-style: italic;
+  color: #a05a6a;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.content-section {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.content-section:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.content-section img {
+  max-width: 50%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-section .text {
+  max-width: 50%;
+}
+
+.content-section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.content-section p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin: 50px 0;
+}
+
+.grid-gallery img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.client-reviews {
+  background-color: #fce6eb;
+  padding: 40px;
+  border-radius: 8px;
+  margin-top: 20px;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  width: 35%;
+  margin: 0 auto;
+}
+
+.client-reviews h2 {
+  font-size: 28px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.reviews-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.review {
+  background-color: #fce6eb;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.review p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.review span {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+.btn {
+  margin: 20px;
+  text-decoration: none;
+  color: #000;
+  font-size: 22px;
+  font-weight: 600;
+  border: 3px solid #000;
+  text-align: center;
+  padding: 8px 15px;
+  border-radius: 80px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  box-sizing: border-box;
+  transition: border 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+  color: #f5acbd;
+  border: 3px solid #f5acbd;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 1rem;
+  color: #f5acbd;
+  background-color: #49262e;
+}
+
+footer span {
+  color: #f5acbd;
+  font-weight: bold;
+}
